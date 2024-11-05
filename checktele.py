@@ -626,7 +626,7 @@ async def _(event):
             trys = 0
             return await event.client.send_message(event.chat_id, "! تم ايقاف الصيد")
         else:
-            await event.edit(f"...")
+            await event.edit(f"**✥┊ تم بـدء الصيد .. بنجـاح ☑️**\n**✥┊ بالنـوع** {choice} \n**✥┊ على القنـاة** {ch} \n**✥┊ عدد المحاولات** {msg[0]} \n**✥┊ لمعرفـة تقـدم عمليـة الصيد (** `.حالة الصيد` **)**\n**✥┊ لـ ايقـاف عمليـة الصيد (** `.ايقاف الصيد` **)**")
             await asyncio.sleep(1)
 
         if ch == None:
